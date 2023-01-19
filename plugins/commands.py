@@ -13,8 +13,8 @@ async def help_handler(_, event: Message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
 
-             [InlineKeyboardButton("About", callback_data="About_msg"),
-             InlineKeyboardButton("Help", callback_data="Help_msg")
+             [InlineKeyboardButton("🅰️bout", callback_data="About_msg"),
+             InlineKeyboardButton("ℹ️Help", callback_data="Help_msg")
              ]
         ])
     )                        
@@ -24,7 +24,7 @@ async def watch_handler(_, event: Message):
     await event.reply_text(Config.ABOUT_WATCH_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
             [
-            InlineKeyboardButton("Click Me For Tutorials", callback_data="Watch_msg")
+            InlineKeyboardButton("🍿Movie Search BOT", callback_data="Watch_msg")
              ]
         ])
     ) 
@@ -38,7 +38,7 @@ async def mdisk_handler(_, event: Message):
             ],
 
              [InlineKeyboardButton("TeraBox", callback_data="Terabox_msg"),
-             InlineKeyboardButton('Watch Video', url='https://t.me/CyniteBackup/17')
+             InlineKeyboardButton('✅Tutorail✅', url='https://te.legra.ph/file/7a01af2730a4d8a4fa333.jpg')
              ]
         ])
     )
@@ -68,7 +68,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url=f'https://t.me/Cynitesupport')
+            InlineKeyboardButton('🍿 Req Group', url=f'https://t.me/blackest_harbour')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
