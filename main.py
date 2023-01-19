@@ -104,11 +104,11 @@ async def message_handler(event):
         if c <= 0:
             answer = f'''** Sorry {event.sender.first_name} No Results Found For {event.text}**
 
-**Please check the spelling on** [Google](http://www.google.com/search?q={event.text.replace(' ', '%20')}%20Movie)🔍
-**Else Request In 👇<b>**
+**Please check the spelling on** [Google](http://www.google.com/search?q={event.text.replace(' ', '%20')}%20Movie) 
+**Else REQUEST In OUR BLACK MARKET**
     '''
 
-            newbutton = [Button.url('🏴In Black Market🏴',
+            newbutton = [Button.url('🏴 BLACK MARKET 🏴',
                                     f'https://t.me/z_harbour_files')]
 
             await txt.delete()
@@ -129,9 +129,9 @@ async def message_handler(event):
             title=event.text,
             author=Config.BOT_USERNAME
         )
-        message = f'**Click Here 👇 For "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("I Found Something").upper()}]({tgraph_result})'
+        message = f'**Click Here 👇 For "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("Click me for results").upper()}]({tgraph_result})'
 
-        newbutton = [Button.url('',
+        newbutton = [Button.url('🏴RequestInBLAcKMaRket🏴',
                                     f'https://t.me/blackest_harbour')]
 
         await txt.delete()
@@ -144,7 +144,7 @@ async def message_handler(event):
     except Exception as e:
         print(e)
         await txt.delete()
-        result = await event.reply()
+        result = await event.reply("I am Unable Search,Please Search In @PostSearchBOT🙏")
         await asyncio.sleep(Config.AUTO_DELETE_TIME)
         await event.delete() 
         return await result.delete()
