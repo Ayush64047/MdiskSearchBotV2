@@ -15,4 +15,18 @@ class Config(object):
 #    OWNER_USERNAME = os.getenv("OWNER_USERNAME")
     BACKUP_CHANNEL = os.getenv("BACKUP_CHANNEL")
 #    GROUP_USERNAME = os.getenv("GROUP_USERNAME")
+ 
+
+
+    UPDATES_CHANNEL = os.getenv("UPDATES_CHANNEL", None)
+    DATABASE_URL = os.getenv("DATABASE_URL", "")
+    LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", ""))
+    RESULTS_COUNT = int(os.getenv("RESULTS_COUNT", 5))
+    BROADCAST_AS_COPY = os.getenv("BROADCAST_AS_COPY", "True")
+    UPDATES_CHANNEL_USERNAME = os.getenv("UPDATES_CHANNEL_USERNAME", "")
+    FORCE_SUB = os.getenv("FORCE_SUB", "False")
+    AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", 3000))
+    MDISK_API = os.getenv("MDISK_API", "12334")
+    VERIFIED_TIME  = int(os.getenv("VERIFIED_TIME", "375"))
     
+
