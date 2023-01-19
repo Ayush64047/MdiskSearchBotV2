@@ -37,7 +37,7 @@ async def mdisk_handler(_, event: Message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
 
-             [InlineKeyboardButton("TeraBox", callback_data="Terabox_msg"),
+             [InlineKeyboardButton("shortlinkurl", callback_data="shortlinkurl_msg"),
              InlineKeyboardButton('✅Tutorail✅', url='https://te.legra.ph/file/7a01af2730a4d8a4fa333.jpg')
              ]
         ])
@@ -51,7 +51,7 @@ async def terabox_handler(_, event: Message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
 
-             [InlineKeyboardButton("Mdisk", callback_data="Mdisk_msg"),
+             
              InlineKeyboardButton('Watch Photo', url='https://telegra.ph/file/abdc2f0e2d59f6bb67fa5.jpg')
              ]
         ])
@@ -68,7 +68,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('🍿 Req Group', url=f'https://t.me/blackest_harbour')
+            InlineKeyboardButton('🍿Req Group', url=f'https://t.me/blackest_harbour')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -186,8 +186,8 @@ async def start_handler(_,event: Message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
 
-             [InlineKeyboardButton("About", callback_data="About_msg"),
-             InlineKeyboardButton("Help", callback_data="Help_msg")
+             [InlineKeyboardButton("🅰️bout", callback_data="About_msg"),
+             InlineKeyboardButton("ℹ️Help", callback_data="Help_msg")
              ]
         ])
     )
